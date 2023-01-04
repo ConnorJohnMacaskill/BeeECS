@@ -1,6 +1,8 @@
 # Introduction
 Another, newer [ECS](https://en.wikipedia.org/wiki/Entity_component_system) engine written using the C# Monogame framework, known as BeeECS. A working game of asteroids using the engine is included.
 
+Also included is an implementaion of a behaviour tree, although I never really used it for much.
+
 # Structure
 
 The engine logic is centralised in the BeeECS project, with asteroids implemented in the Asteroids project.
