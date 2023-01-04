@@ -1,0 +1,26 @@
+<Entity>
+    <Name>Asteroid</Name>
+    <RandomRotation>True</RandomRotation>
+    <Components>
+        <SpriteComponent>
+            <Path>Assets\Textures\Ast 3.png</Path>
+            <Origin>24,24</Origin>
+            <Scale>1.0</Scale>
+            <Color>Red</Color>
+        </SpriteComponent>
+        <MovementComponent>
+            <AccelerationPerSecond>0.5</AccelerationPerSecond>
+            <MaxSpeed>60</MaxSpeed>
+            <DegreesPerSecond>90</DegreesPerSecond>
+            <SpeedPerSecond>50,150</SpeedPerSecond>
+        </MovementComponent>
+        <SpinComponent>
+            <DegreesPerSecond>0,45</DegreesPerSecond>
+        </SpinComponent>
+        <CollisionComponent>
+            <Class>Asteroid</Class>
+            <Radius>24</Radius>
+        </CollisionComponent>
+        <BoundsComponent/>
+    </Components>
+</Entity>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/543084.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Box.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ast 1.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ast 2.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ast 3.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ast 4.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ast 5.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 1.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 2.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 3.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 4.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 5.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 6.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Ore 7.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/PlayerShip.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/PBullet1.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/PBullet2.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/PBullet3.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/RiflemanAnimated.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/DanCASActual.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/DanFrigateActual.png</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/Frames.spritefont</File>
+    <File>M:/Development/Development Files/C#/Project Dawn/Asteroids/Content/SmallBullet.png</File>
+  </SourceFiles>
+</SourceFileCollection>

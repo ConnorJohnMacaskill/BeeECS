@@ -1,0 +1,18 @@
+<Entity>
+    <Name>Test</Name>
+    <Components>
+        <DragComponent>
+            <DragAmount>0.5</DragAmount>
+        </DragComponent>
+        <SpinComponent>
+            <DegreesPerSecondMin>50</DegreesPerSecondMin>
+            <DegreesPerSecondMax>360</DegreesPerSecondMax>
+        </SpinComponent>
+        <SpriteComponent>
+            <Path>Assets\Textures\Box.png</Path>
+            <Origin>16,16</Origin>
+            <Scale>1.0</Scale>
+            <Color>White</Color>
+        </SpriteComponent>
+    </Components>
+</Entity>

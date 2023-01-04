@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70BCFB0F-BB91-4747-914D-E44F0DAE3D06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asteroids</RootNamespace>
+    <AssemblyName>Asteroids</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\EntityAsset.cs" />
+    <Compile Include="Assets\TextureAsset.cs" />
+    <Compile Include="Behaviour\ActionShootNode.cs" />
+    <Compile Include="Behaviour\CheckFacingTargetNode.cs" />
+    <Compile Include="Behaviour\CheckHasTargetNode.cs" />
+    <Compile Include="Behaviour\FailureNode.cs" />
+    <Compile Include="Behaviour\RotateToDefaultNode.cs" />
+    <Compile Include="Behaviour\RotateTowardsTargetNode.cs" />
+    <Compile Include="Components\AnimationComponent.cs" />
+    <Compile Include="Components\BehaviourComponent.cs" />
+    <Compile Include="Components\CollisionComponent.cs" />
+    <Compile Include="Components\DragComponent.cs" />
+    <Compile Include="Components\FactionComponent.cs" />
+    <Compile Include="Components\HardpointsComponent.cs" />
+    <Compile Include="Components\HealthComponent.cs" />
+    <Compile Include="Components\MovementComponent.cs" />
+    <Compile Include="Components\PlayerComponent.cs" />
+    <Compile Include="Components\ProjectileWeaponComponent.cs" />
+    <Compile Include="Components\SpinComponent.cs" />
+    <Compile Include="Components\SpriteComponent.cs" />
+    <Compile Include="Components\TargetComponent.cs" />
+    <Compile Include="Enums\AnimationEvents.cs" />
+    <Compile Include="Enums\AssetType.cs" />
+    <Compile Include="Enums\WeaponEvents.cs" />
+    <Compile Include="Events\InputEventData.cs" />
+    <Compile Include="Factories\Components\BehaviourComponentFactory.cs" />
+    <Compile Include="Components\BoundsComponent.cs" />
+    <Compile Include="Factories\Components\BoundsComponentFactory.cs" />
+    <Compile Include="Factories\Components\CollisionComponentFactory.cs" />
+    <Compile Include="Factories\Components\DragComponentFactory.cs" />
+    <Compile Include="Factories\Components\FactionComponentFactory.cs" />
+    <Compile Include="Factories\Components\HardpointsComponentFactory.cs" />
+    <Compile Include="Factories\Components\MovementComponentFactory.cs" />
+    <Compile Include="Factories\Components\PlayerComponentFactory.cs" />
+    <Compile Include="Factories\Components\ProjectileWeaponComponentFactory.cs" />
+    <Compile Include="Factories\Components\SpinComponentFactory.cs" />
+    <Compile Include="Factories\Components\SpriteComponentFactory.cs" />
+    <Compile Include="Factories\Components\TargetComponentFactory.cs" />
+    <Compile Include="Factories\ProjectileFactory.cs" />
+    <Compile Include="Factories\Assets\EntityAssetFactory.cs" />
+    <Compile Include="Factories\Assets\TextureAssetFactory.cs" />
+    <Compile Include="Factories\ValueFactory.cs" />
+    <Compile Include="Models\Animation.cs" />
+    <Compile Include="Models\Frame.cs" />
+    <Compile Include="Models\SpriteSheetData.cs" />
+    <Compile Include="AsteroidsGame.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\AnimationSystem.cs" />
+    <Compile Include="Systems\BehaviourSystem.cs" />
+    <Compile Include="Systems\BoundsSystem.cs" />
+    <Compile Include="Systems\DragSystem.cs" />
+    <Compile Include="Systems\FrameRateSystem.cs" />
+    <Compile Include="Systems\HardpointsSystem.cs" />
+    <Compile Include="Systems\InputSystem.cs" />
+    <Compile Include="Systems\MovementSystem.cs" />
+    <Compile Include="Systems\ProjectileWeaponSystem.cs" />
+    <Compile Include="Systems\CollisionSystem.cs" />
+    <Compile Include="Systems\DeathSystem.cs" />
+    <Compile Include="Systems\PlayerSystem.cs" />
+    <Compile Include="Systems\SpinSystem.cs" />
+    <Compile Include="Systems\SpriteDrawSystem.cs" />
+    <Compile Include="Systems\TargetSystem.cs" />
+    <Compile Include="Utility\InputHandler.cs" />
+    <Compile Include="Utility\RandomGenerator.cs" />
+    <Compile Include="World\Animations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Factories\ExampleEntity.xml" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeeECS\BeeECS.csproj">
+      <Project>{4a89342c-dcfb-4a96-aeb8-ee8270ce837f}</Project>
+      <Name>BeeECS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeehaviorTree\BeehaviorTree.csproj">
+      <Project>{C7926B26-0C75-4F68-996E-E48FC3C0F8F4}</Project>
+      <Name>BeehaviorTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{c65cd46e-d285-4c19-805f-e0c5891a676d}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResBee\ResBee.csproj">
+      <Project>{30c603dc-6b90-475a-b07c-0d3d9260c20b}</Project>
+      <Name>ResBee</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventData\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(SolutionDir)Assets\*.*" "$(TargetDir)\Assets" /Y /I /E</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

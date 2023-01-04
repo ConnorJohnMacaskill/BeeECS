@@ -1,0 +1,33 @@
+<Entity>
+    <Name>Turret</Name>
+    <RandomRotation>False</RandomRotation>
+    <Components>
+        <SpriteComponent>
+            <Path>Assets\Textures\Turret.png</Path>
+            <Origin>16,16</Origin>
+            <Scale>1.0</Scale>
+            <Color>White</Color>
+        </SpriteComponent>
+        <MovementComponent>
+            <AccelerationPerSecond>0</AccelerationPerSecond>
+            <MaxSpeed>0</MaxSpeed>
+            <DegreesPerSecond>180</DegreesPerSecond>
+            <SpeedPerSecond>0</SpeedPerSecond>
+        </MovementComponent>
+        <TargetComponent>
+            <Range>200</Range>
+        </TargetComponent>
+        <ProjectileWeaponComponent>
+            <SecondsPerShot>0.3</SecondsPerShot>
+            <ProjectilesPerShot>1</ProjectilesPerShot>
+            <BurstDelayInSeconds>0.25</BurstDelayInSeconds>
+        </ProjectileWeaponComponent>
+        <BehaviourComponent>
+            <Path>Assets\Behaviours\Turret.xml</Path>
+        </BehaviourComponent>
+        <DragComponent>
+            <MovementDrag>0</MovementDrag>
+            <RotationDrag>10</RotationDrag>
+        </DragComponent>
+    </Components>
+</Entity>

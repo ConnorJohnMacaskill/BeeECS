@@ -1,0 +1,84 @@
+﻿Positions or "transforms" are kind of a special case, I want to be able to offset certain components like sprites and weapons, so logically they would have their own positions.
+Extending on from this, is a "transform" component required? I suppose it saves on entities that might not need to move or be drawn.
+hmmm.
+
+
+How to deal with multiple entities attached to each other?
+Have an "child" component which holds a reference to an entity, this treats the entities position as an offset.
+
+This means that an entity would be restricted to ONE of each component and any extras can be more entities.
+Soooo for a shgip with 2 turrets
+
+The child component would hold a position and an offset actually, entity position is serialised.
+Actually this would solve the offset issue, could go back to having a transform component. As the
+transform for a child is held in child componet itself then it should be fine.
+
+
+<Entity>
+	<Components>
+		<SpriteComponent>
+			<Texture>~Frigate.png</Texture>
+		</SpriteComponent>
+		<ChildComponent>
+			<Offset>34,12</Offset>
+			<Entity>
+				<Components>
+					<SpriteComponent>
+				</Components>
+			</Entity>
+		</ChildComponent>
+	<Components>
+<Entity>
+
+But for now lets keep with a single entity depth.
+
+
+Z-Nation escape bus
+Z-Nation live bait cages
+
+
+How This All Works -
+
+Components are purely information, no actual game logic takes place. Other helpers are allowed.
+Systems contain all the game logic, only act on entities which have the required components.
+Systems will onyl act on an entity that has every required component.
+All entitied have transform information.
+The component manager is responsible for registering new components 
+
+
+I dislike the "bitmask" pair thing, it is clunky and unintiutive and is a bitch to work with.
+How about a new system using string composed of ones and twos?
+Create a new bitmask class.
+When a component is registered, it is given an ID
+That ID corresponds to a position in the bitmask array
+When a system is registered, get the IDs of the components it needs to work on, give it the bitmask
+so
+
+4 components with assigned ids -
+Speed - 0
+Velocity - 1
+Gun - 2
+Move - 3
+
+So that would result in a 4 bit bitmask
+"1111"
+
+I then register a "Gravity" system which uses components Speed and Volocity
+It would have a bitmask of 
+"1100"
+
+
+An entity with "Speed", "Velocity" and "Gun" would have a bitmask of
+"1110"
+
+
+I then want to find entities with components "Speed" and "Velocity" for the System
+I check the EntityManager for their IDs, and get back 0 and 1
+So I then get all entities where their BitMask indexes of 0 and 1 are 1.
+Done, the system then has a lovely list.
+
+
+
+RULE
+Cannot register new components after runtime, as this would require changing all array sizes.
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/543084.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Box.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ast 1.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ast 2.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ast 3.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ast 4.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ast 5.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 1.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 2.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 3.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 4.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 5.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 6.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Ore 7.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/PlayerShip.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/PBullet1.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/PBullet2.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/PBullet3.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/RiflemanAnimated.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/DanCASActual.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/DanFrigateActual.png</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/Frames.spritefont</File>
+    <File>C:/Users/CMacr/Documents/GitHub/BeeECS/Asteroids/Content/SmallBullet.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
